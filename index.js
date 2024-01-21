@@ -9,39 +9,39 @@ buttons.forEach(function(buttons){
                 audioTom1.play(); 
                 break;
             case "s":
-                var audioTom2 = new Audio("sounds/tom.2.mp3")
+                var audioTom2 = new Audio("sounds/tom-2.mp3")
                 audioTom2.play(); 
                 break;
 
             case "d":
-                var audioTom2 = new Audio("sounds/tom.2.mp3")
+                var audioTom2 = new Audio("sounds/tom-3.mp3")
                 audioTom2.play(); 
                 break;
 
             case "f":
-                var audioTom2 = new Audio("sounds/tom.2.mp3")
+                var audioTom2 = new Audio("sounds/tom-4.mp3")
                 audioTom2.play(); 
                 break;
 
             case "j":
-                var audioTom2 = new Audio("sounds/tom.2.mp3")
+                var audioTom2 = new Audio("sounds/snare.mp3")
                 audioTom2.play(); 
                 break;
 
             case "k":
-                var audioTom2 = new Audio("sounds/tom.2.mp3")
+                var audioTom2 = new Audio("sounds/crash.mp3")
                 audioTom2.play(); 
                 break;
 
-            case "ljak":
-                var audioTom2 = new Audio("sounds/tom.2.mp3")
+            case "l":
+                var audioTom2 = new Audio("sounds/kick-bass.mp3")
                 audioTom2.play(); 
                 break;
 
 
 
-            default:
-                break;
+            default: console.log(buttonInnerHTML)
+                
         }
          
     });
