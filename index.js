@@ -64,6 +64,12 @@ function playDrums(key){
 }
 
 function buttonAnimation(currentKey){
-    
+
+    var activebutton = document.querySelector("." + currentKey);
+    activebutton.classList.add("pressed"); //adding pressed class which we have styled in css file...
+    setTimeout(function(){
+        activebutton.classList.remove("pressed");
+
+    },100);
 
 }
