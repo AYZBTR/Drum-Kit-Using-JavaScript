@@ -6,6 +6,7 @@ buttons.forEach(function(buttons){
     buttons.addEventListener("click", function(){
         var buttonInnerHTML = this.innerHTML;
         playDrums(buttonInnerHTML);
+        buttonAnimation(buttonInnerHTML);
          
     });
 }) 
@@ -13,6 +14,7 @@ buttons.forEach(function(buttons){
 // Detecting Keyboard Press
 document.addEventListener("keypress", function(event){
     playDrums(event.key);
+    buttonAnimation(event.key);
 
 });
 
@@ -59,4 +61,9 @@ function playDrums(key){
         default: console.log(buttonInnerHTML)
             
     }
+}
+
+function buttonAnimation(currentKey){
+    
+
 }
